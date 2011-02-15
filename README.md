@@ -82,12 +82,12 @@ Chain a tween:
 
 	tween1.chain( tween2 );
 
--- **tween2**: This tween will automatically start once tween1 has completed.
+- **tween2**: This tween will automatically start once tween1 has completed.
 
 ### Settings ###
 
--- **delay**: Number of seconds to wait before beginning tween once started.
--- **easing**: An easing function to be applied to the tween. See Easing below.
--- **loop**: Tween will loop according to the specified behavior.
----- **ig.Tween.Loop.Revert**: Properties revert to their original values at the end of the tween and start over.
----- **ig.Tween.Loop.Reverse**: Properties will smoothly reverse from their end values back to the starting values and start over.
+- **delay**: Number of seconds to wait before beginning tween once started.
+- **easing**: An easing function to be applied to the tween. See Easing below.
+- **loop**: Tween will loop according to the specified behavior.
+-- **ig.Tween.Loop.Revert**: Properties revert to their original values at the end of the tween and start over.
+-- **ig.Tween.Loop.Reverse**: Properties will smoothly reverse from their end values back to the starting values and start over.
