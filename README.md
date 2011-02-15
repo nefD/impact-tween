@@ -47,5 +47,47 @@ Create a tween:
 
 - **properties**: A javascript object containing properties and values which you would like to tween to.
 - **duration**: Number of seconds (in game time) it should take to complete the tween animation.
-- **settings**: Optional. A javascript object containing additional options and settings.
+- **settings**: Optional. A javascript object containing additional options and settings. See Settings section for more info.
 
+Pause a tween:
+
+	tween.pause();
+
+Resume a paused tween:
+
+	tween.resume();
+
+Stop a tween:
+
+	tween.stop( [complete] );
+
+- **complete**: If true, tween will automatically set all properties to their final values.
+
+Pause all tweens on an entity:
+
+	entity.pauseTweens();
+
+Resume all tweens on an entity:
+
+	entity.resumeTweens();
+
+Stop all tweens on an entity:
+
+	entity.stopTweens( [complete] );
+
+- **complete**: If true, all tweens will automatically set all properties to their final values.
+
+
+Chain a tween:
+
+	tween1.chain( tween2 );
+
+-- **tween2**: This tween will automatically start once tween1 has completed.
+
+### Settings ###
+
+-- **delay**: Number of seconds to wait before beginning tween once started.
+-- **easing**: An easing function to be applied to the tween. See Easing below.
+-- **loop**: Tween will loop according to the specified behavior.
+---- **ig.Tween.Loop.Revert**: Properties revert to their original values at the end of the tween and start over.
+---- **ig.Tween.Loop.Reverse**: Properties will smoothly reverse from their end values back to the starting values and start over.
