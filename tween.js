@@ -98,7 +98,7 @@ ig.Tween = function(obj, properties, duration, settings) {
 		} else {
 			for ( subprop in from[prop] ) {
 				if ( !to[prop] ) to[prop] = {};
-				this.initStart( subprop, end[prop], from[prop], to[prop] );
+				if ( typeof(end[prop]) !== "undefined" ) this.initStart( subprop, end[prop], from[prop], to[prop] );
 			}
 		}
 	};
