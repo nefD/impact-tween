@@ -316,7 +316,7 @@ ig.Tween.Easing.Circular.EaseIn = function ( k ) {
 };
 
 ig.Tween.Easing.Circular.EaseOut = function ( k ) {
-	return Math.sqrt( 1 - --k * k );
+	return Math.sqrt( 1 - (--k * k) );
 };
 
 ig.Tween.Easing.Circular.EaseInOut = function ( k ) {
