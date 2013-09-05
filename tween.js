@@ -176,7 +176,7 @@ ig.Tween = function(obj, properties, duration, settings) {
 		if ( elapsed >= 1 ) {
 			if ( this.loopNum == 0 || !this.loop ) {
 				this.complete = true;
-				if ( this.onComplete ) this.onComplete();
+				if ( this.onComplete ) this.onComplete(_object);
 				if ( _chained ) _chained.start();
 				return false;
 			} else if ( this.loop == ig.Tween.Loop.Revert ) {
